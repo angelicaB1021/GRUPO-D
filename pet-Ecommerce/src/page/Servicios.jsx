@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React from "react";
 import { Link } from 'react-router-dom';
 
 // Datos de servicios
@@ -40,18 +40,18 @@ export const Servicios = () => {
       <h1 className="text-4xl font-bold text-center mb-8 text-[#6b8e23]">Nuestros Servicios</h1>
       <div className="container mx-auto">
         {serviciosData.map((servicio) => (
-          <div key={servicio.id} className="bg-white p-6 mb-6 rounded-lg shadow-md flex items-center">
+          <div key={servicio.id} className="flex items-center p-6 mb-6 bg-white rounded-lg shadow-md">
             <img
               src={servicio.image}
               alt={servicio.title}
-              className="w-1/3 h-auto rounded-lg object-cover mr-6"
+              className="object-cover w-1/3 h-auto mr-6 rounded-lg"
             />
             <div className="w-2/3">
               <h2 className="text-2xl font-semibold text-[#4c6b15] mb-3">{servicio.title}</h2>
-              <p className="text-lg text-gray-700 mb-4">{servicio.description}</p>
-              <ul className="list-disc pl-5 mb-4">
+              <p className="mb-4 text-lg text-gray-700">{servicio.description}</p>
+              <ul className="pl-5 mb-4 list-disc">
                 {servicio.features.map((feature, idx) => (
-                  <li key={idx} className="text-gray-600 mb-2">{feature}</li>
+                  <li key={idx} className="mb-2 text-gray-600">{feature}</li>
                 ))}
               </ul>
               <Link

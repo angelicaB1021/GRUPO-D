@@ -1,5 +1,5 @@
 // src/pages/ServiciosDetalle.jsx
-import React from 'react';
+import React from "react";
 import { useParams } from 'react-router-dom';
 
 // Datos de ejemplo para servicios
@@ -43,18 +43,18 @@ export const ServiciosDetalle = () => {
 
   return (
     <div className="p-6 bg-gray-100">
-      <div className="container mx-auto bg-white p-6 rounded-lg shadow-md">
+      <div className="container p-6 mx-auto bg-white rounded-lg shadow-md">
         <h1 className="text-4xl font-bold text-[#6b8e23] mb-4">{servicio.title}</h1>
         <img
           src={servicio.image}
           alt={servicio.title}
-          className="w-full h-auto rounded-lg mb-4"
+          className="w-full h-auto mb-4 rounded-lg"
         />
-        <p className="text-lg text-gray-700 mb-4">{servicio.details}</p>
+        <p className="mb-4 text-lg text-gray-700">{servicio.details}</p>
         <h2 className="text-2xl font-semibold text-[#4c6b15] mb-3">Características</h2>
-        <ul className="list-disc pl-5">
+        <ul className="pl-5 list-disc">
           {servicio.features.map((feature, idx) => (
-            <li key={idx} className="text-gray-600 mb-2">{feature}</li>
+            <li key={idx} className="mb-2 text-gray-600">{feature}</li>
           ))}
         </ul>
       </div>
