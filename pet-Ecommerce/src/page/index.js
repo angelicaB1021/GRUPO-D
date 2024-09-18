@@ -1,5 +1,5 @@
 export { Categorias } from "./categorias/Categorias";
-export { CategoriasDetalles } from "./categorias/CategoriasDetalles";
+//export { CategoriasDetalles } from "./categorias/CategoriasDetalles";
 export { CategoriaAccesorios } from "./categorias/CategoriaAccesorios";
 export { CategoriaAlimento } from "./categorias/CategoriaAlimento";
 export { CategoriaJuguetes } from "./categorias/CategoriaJuguetes";
