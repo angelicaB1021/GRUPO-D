@@ -13,6 +13,7 @@ import {
   AcercaDeNosotros,
 } from "./page";
 import Navbar from "./components/Navbar";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -57,6 +58,7 @@ function App() {
             element={<AcercaDeNosotros />}
           />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );
