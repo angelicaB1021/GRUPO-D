@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Categorias, categorias } from "./page/categorias/Categorias";
 import {
-  CategoriasDetalles, 
-  // CategoriaAccesorios,
-  // CategoriaAlimento,
-  // CategoriaJuguetes,
-  // CategoriaRopa,
+  //CategoriasDetalles, 
+  CategoriaAccesorios,
+  CategoriaAlimento,
+  CategoriaJuguetes,
+  CategoriaRopa,
   Error404,
   Home,
   Servicios,
@@ -22,30 +22,30 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/categorias" element={<Categorias />} />
-          {/* <Route
-            path="/categoriaAccesorios"
+          <Route
+            path="/categorias/Accesorios"
             element={<CategoriaAccesorios />}
           ></Route>
           <Route
-            path="/categoriaAlimento"
+            path="/categorias/Alimento"
             element={<CategoriaAlimento />}
           ></Route>
           <Route
-            path="/categoriaJuguetes"
+            path="/categorias/Juguetes"
             element={<CategoriaJuguetes />}
           ></Route>
           <Route
-            path="/categoriaRopa"
+            path="/categorias/Ropa"
             element={<CategoriaRopa />}
-          ></Route> */}
+          ></Route>
           {/* <Route
             path="/categoriasDetalles"
             element={<CategoriasDetalles />}
-          ></Route> */}
+          ></Route>
           <Route
             path="/categoria/:id"
             element={<CategoriasDetalles categorias={categorias} />}
-          />
+          /> */}
           <Route path="/Erro404" element={<Error404 />}/>
           <Route path="/Servicios" element={<Servicios />}/>
           <Route

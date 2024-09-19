@@ -47,7 +47,7 @@ export const Categorias = () => {
             className="p-6 text-center bg-[#a98467] rounded-lg shadow-md"
           >
             <Link
-              to={`/categoria/${categoria.id}`}
+              to={`/categorias/${categoria.nombre}`}
               className="text-xl font-semibold text-[#f0ead2]"
             >
               {categoria.nombre}
