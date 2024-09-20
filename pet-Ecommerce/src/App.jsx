@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Categorias, categorias } from "./page/categorias/Categorias";
 import {
+  Categorias,
   //CategoriasDetalles, 
   CategoriaAccesorios,
   CategoriaAlimento,
