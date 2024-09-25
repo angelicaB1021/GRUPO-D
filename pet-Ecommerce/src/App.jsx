@@ -1,4 +1,6 @@
+// Importamos los módulos necesarios desde react-router-dom
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// Importamos los componentes de páginas desde el archivo "./page"
 import {
   Categorias,
   //CategoriasDetalles, 
@@ -12,14 +14,18 @@ import {
   ServiciosDetalle,
   AcercaDeNosotros,
 } from "./page";
+// Importamos los componentes Navbar y Footer
 import Navbar from "./components/Navbar";
-import Footer from "./components/footer";
-
+//import Footer from "./components/footer";
+// Definimos el componente principal "App"
 function App() {
   return (
     <>
+    {/* Utilizamos BrowserRouter para manejar el enrutamiento */}
       <BrowserRouter>
+      {/* Colocamos el componente Navbar, que estará visible en todas las páginas */}
         <Navbar />
+         {/* Definimos las rutas que se renderizarán según la URL */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/categorias" element={<Categorias />} />
@@ -58,7 +64,7 @@ function App() {
             element={<AcercaDeNosotros />}
           />
         </Routes>
-        <Footer/>
+       {/*  <Footer/> */}
       </BrowserRouter>
     </>
   );
