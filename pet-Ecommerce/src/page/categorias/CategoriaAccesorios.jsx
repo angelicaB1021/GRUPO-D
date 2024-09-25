@@ -1,5 +1,7 @@
+// Exportamos un array de objetos llamado 'categorias' que contiene la información de varias categorías de productos
 export const categorias = [
   {
+    // Cada objeto tiene un identificador único 'id', el nombre de la categoría, la URL de una imagen y una breve descripción
     id: 1,
     nombre: "Correas",
     imagen:
@@ -31,7 +33,7 @@ export const categorias = [
       "Ofrecemos los comederos mas lindos para tus mascotas",
   },
 ];
-
+// Exportamos el componente funcional 'CategoriaAccesorios' que simplemente devuelve un <div> con el texto "CategoriaAccesorios"
 export const CategoriaAccesorios = () => {
   return (
     <div>CategoriaAccesorios</div>

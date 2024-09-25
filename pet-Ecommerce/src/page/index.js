@@ -1,3 +1,4 @@
+// es un archivo barril para contener las exportaciones 
 export { Categorias } from "./categorias/Categorias";
 //export { CategoriasDetalles } from "./categorias/CategoriasDetalles";
 export { CategoriaAccesorios } from "./categorias/CategoriaAccesorios";
