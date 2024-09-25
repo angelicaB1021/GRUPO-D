@@ -16,7 +16,7 @@ import {
 } from "./page";
 // Importamos los componentes Navbar y Footer
 import Navbar from "./components/Navbar";
-//import Footer from "./components/footer";
+import PiedePagina from "./components/PiedePagina";
 // Definimos el componente principal "App"
 function App() {
   return (
@@ -64,7 +64,7 @@ function App() {
             element={<AcercaDeNosotros />}
           />
         </Routes>
-       {/*  <Footer/> */}
+       <PiedePagina/>
       </BrowserRouter>
     </>
   );
