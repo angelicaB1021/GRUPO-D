@@ -50,7 +50,7 @@ function App() {
           <Route path="/Erro404" element={<Error404 />}/>
           <Route path="/Servicios" element={<Servicios />}/>
           <Route
-            path="/ServiciosDetalle"
+            path="/Servicios/:id"
             element={<ServiciosDetalle />}
           />
           <Route
