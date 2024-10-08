@@ -27,8 +27,11 @@ function App() {
         <Navbar />
          {/* Definimos las rutas que se renderizarán según la URL */}
         <Routes>
+          {/* Ruta para la página principal */}
           <Route path="/" element={<Home />} />
+            {/* Ruta para la página de categorías */}
           <Route path="/categorias" element={<Categorias />} />
+          {/* Rutas para las subcategorías específicas */}
           <Route
             path="/categorias/Accesorios"
             element={<CategoriaAccesorios />}
@@ -53,16 +56,20 @@ function App() {
             path="/categoria/:id"
             element={<CategoriasDetalles categorias={categorias} />}
           /> */}
+          {/* Ruta para la página de error 404 */}
           <Route path="/Erro404" element={<Error404 />}/>
           <Route path="/Servicios" element={<Servicios />}/>
+           {/* Rutas para los servicios y sus detalles */}
           <Route
             path="/Servicios/:id"
             element={<ServiciosDetalle />}
           />
+          {/* Ruta para la página "Acerca de Nosotros" */}
           <Route
             path="/AcercaDeNosotros"
             element={<AcercaDeNosotros />}
           />
+          {/* Colocamos el componente pie de pagina, que también estará visible en todas las páginas */}
         </Routes>
        <PiedePagina/>
       </BrowserRouter>

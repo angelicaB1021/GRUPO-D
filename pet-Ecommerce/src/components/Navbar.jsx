@@ -1,22 +1,33 @@
+// Importamos React para poder usar JSX en este componente
 import React from 'react'
+// Importamos NavLink desde react-router-dom para la navegación entre las rutas de la aplicación
 import { NavLink } from 'react-router-dom';
+// Importamos el logo de la tienda desde la carpeta assets
 import logo from '../assets/images/logo.png';
 
+// Definimos el componente Navbar que representa la barra de navegación
 const Navbar = () => {
   return (
+     // Definimos el elemento <nav> con clases de Tailwind CSS para el fondo, sombras y el diseño general
     <nav className='bg-[#f0ead2] shadow-md h-25 overflow-hidden'>
-      <div className='container mx-auto flex justify-between items-center'>
+      <div className='container flex items-center justify-between mx-auto'>
         
+        {/* Sección del logo y nombre del negocio */}
       <div className='flex items-center'>
+        {/* Mostramos el logo con la imagen importada */}
           <img src={logo} alt="PetShop Logo" className="h-40 mr-3 -my-4" />
+          {/* Texto con el nombre de la tienda y estilo personalizado */}
           <div className='text-4xl font-bold text-[#6b8e23]'>PetShop</div>
         </div>
+        {/* Sección de los enlaces de navegación */}
         <div className='space-x-8'>
+
+           {/* Enlace a la página de inicio (Home) */}
           <NavLink 
             className={({ isActive }) => 
               `text-[1.4rem] text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
             }
-            to={"/"}
+            to={"/"}// Dirección de la ruta para Home
           >
             Home 
           </NavLink>
@@ -24,7 +35,7 @@ const Navbar = () => {
             className={({ isActive }) => 
               `text-[1.4rem]  text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
             }
-            to={"/categorias"}
+            to={"/categorias"}// Dirección de la ruta 
           >
             Categorías
           </NavLink>
@@ -32,7 +43,7 @@ const Navbar = () => {
             className={({ isActive }) => 
               `text-[1.4rem] text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
             }
-            to={"/Servicios"}
+            to={"/Servicios"}// Dirección de la ruta 
           >
             Servicios
           </NavLink>
@@ -40,7 +51,7 @@ const Navbar = () => {
             className={({ isActive }) => 
               `text-[1.4rem] text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
             }
-            to={"/AcercaDeNosotros"}
+            to={"/AcercaDeNosotros"}// Dirección de la ruta 
           >
             Acerca De Nosotros
           </NavLink>
