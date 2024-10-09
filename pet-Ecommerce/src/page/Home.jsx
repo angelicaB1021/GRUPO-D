@@ -5,7 +5,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-//import { EffectCoverflow, Pagination, Navigation } from 'swiper';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 
 import cat_01 from '../assets/Images/cat_01.jpg'
 import cat_02 from '../assets/Images/cat_02.jpg'
@@ -17,7 +17,7 @@ import golden from '../assets/Images/golden.jpg'
 export const Home = () => {
   return (
     <div className='container'>
-      <h1 className='heading'>Bienvenido a PetShop</h1>
+     
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -36,7 +36,7 @@ export const Home = () => {
           prevEl: '.swiper-button-prev',
           clickable: true,
         }}
-        //modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
         >    
         <SwiperSlide>

@@ -25,7 +25,7 @@ const Navbar = () => {
            {/* Enlace a la página de inicio (Home) */}
           <NavLink 
             className={({ isActive }) => 
-              `text-[1.4rem] text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
+              `text-[2rem] text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
             }
             to={"/"}// Dirección de la ruta para Home
           >
@@ -33,7 +33,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             className={({ isActive }) => 
-              `text-[1.4rem]  text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
+              `text-[2rem]  text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
             }
             to={"/categorias"}// Dirección de la ruta 
           >
@@ -41,7 +41,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             className={({ isActive }) => 
-              `text-[1.4rem] text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
+              `text-[2rem] text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
             }
             to={"/Servicios"}// Dirección de la ruta 
           >
@@ -49,7 +49,7 @@ const Navbar = () => {
           </NavLink>
           <NavLink
             className={({ isActive }) => 
-              `text-[1.4rem] text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
+              `text-[2rem] text-[#6b8e23] hover:text-[#4c6b15] transition-colors ${isActive ? "font-bold border-b-2 border-[#4c6b15]" : ""}`
             }
             to={"/AcercaDeNosotros"}// Dirección de la ruta 
           >
